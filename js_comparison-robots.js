@@ -15,8 +15,8 @@ const robot2 = {
 delete robot1.serialNo;
 delete robot2.serialNo;
 
-const robot1EntriesString = Object.entries(robot1).join();
-const robot2EntriesString = Object.entries(robot2).join();
+const robot1EntriesString = Object.entries(robot1).sort().join();
+const robot2EntriesString = Object.entries(robot2).sort().join();
 
 console.log(robot1EntriesString);
 console.log(robot2EntriesString);
